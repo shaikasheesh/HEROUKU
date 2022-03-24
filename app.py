@@ -15,4 +15,4 @@ def predict():
     prediction = mo.predict(final_features)
     return render_template('index.html',prediction_text = 'predicted values is {}'.format(prediction[0]))
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
